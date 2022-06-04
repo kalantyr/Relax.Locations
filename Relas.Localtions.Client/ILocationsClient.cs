@@ -6,6 +6,6 @@ namespace Relas.Localtions.Client
     {
         Task<IReadOnlyCollection<LocationInfo>> GetAllLocationsAsync(string userToken, CancellationToken cancellation);
 
-        Task<IReadOnlyCollection<object>> GetStaticObjectsAsync(uint locationId, string userToken, CancellationToken cancellation);
+        Task<IReadOnlyCollection<Layer>> GetLayersAsync(uint locationId, string userToken, CancellationToken cancellation);
     }
 }
